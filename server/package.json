@@ -1,0 +1,32 @@
+{
+  "name": "semi-automatic-trader",
+  "version": "1.0.0",
+  "description": "Semi-Automatic Trading with Virtual Money",
+  "main": "app.js",
+  "scripts": {
+    "client": "cd ../client && npm start",
+    "server": "nodemon app.js",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mightomi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^3.6.3",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2",
+    "socket.io": "^4.6.1",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
